@@ -1,0 +1,6 @@
+1591998442319	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2a9oZ5"
+Gtk-Message: 18:47:23.006: Failed to load module "canberra-gtk-module"
+Gtk-Message: 18:47:23.032: Failed to load module "canberra-gtk-module"
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

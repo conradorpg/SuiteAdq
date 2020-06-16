@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.6.9 on linux)" generated="20200616 13:09:03.424" rpa="false">
+<suite id="s1" name="testAdquirencia" source="/home/cndr/workspace/Robot/suiteCaruana/adquirencia/tests/testAdquirencia.robot">
+<test id="s1-t1" name="Caso de Teste 03: Cadastrar Estabelecimento Comercial">
+<kw name="Iniciar Browser" library="resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200616 13:09:03.704" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200616 13:09:03.704" endtime="20200616 13:09:05.946"></status>
+</kw>
+<status status="PASS" starttime="20200616 13:09:03.702" endtime="20200616 13:09:05.946"></status>
+</kw>
+<kw name="Abrir página de login do site" library="resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200616 13:09:05.954" level="INFO">Opening url 'https://adquirencia.dev.mobilpay.com.br/'</msg>
+<status status="PASS" starttime="20200616 13:09:05.953" endtime="20200616 13:10:45.642"></status>
+</kw>
+<status status="PASS" starttime="20200616 13:09:05.947" endtime="20200616 13:10:45.642"></status>
+</kw>
+<kw name="Preencher email do usuário &quot;luiz.guilherme@b2ml.com.br&quot;" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="login"]</arg>
+<arg>${EMAIL}</arg>
+</arguments>
+<msg timestamp="20200616 13:10:45.648" level="INFO">Typing text 'luiz.guilherme@b2ml.com.br' into text field 'xpath=//*[@id="login"]'.</msg>
+<status status="PASS" starttime="20200616 13:10:45.648" endtime="20200616 13:10:46.138"></status>
+</kw>
+<status status="PASS" starttime="20200616 13:10:45.647" endtime="20200616 13:10:46.139"></status>
+</kw>
+<kw name="Preencher senha do usuário &quot;123456&quot;" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="senha"]</arg>
+<arg>${SENHA}</arg>
+</arguments>
+<msg timestamp="20200616 13:10:46.140" level="INFO">Typing text '123456' into text field 'xpath=//*[@id="senha"]'.</msg>
+<status status="PASS" starttime="20200616 13:10:46.140" endtime="20200616 13:10:46.323"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>screenshot login</arg>
+</arguments>
+<msg timestamp="20200616 13:10:46.324" level="INFO">screenshot login</msg>
+<status status="PASS" starttime="20200616 13:10:46.323" endtime="20200616 13:10:46.324"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>screenshot_login.png</arg>
+</arguments>
+<msg timestamp="20200616 13:10:46.505" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot_login.png"&gt;&lt;img src="screenshot_login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200616 13:10:46.324" endtime="20200616 13:10:46.505"></status>
+</kw>
+<status status="PASS" starttime="20200616 13:10:46.139" endtime="20200616 13:10:46.506"></status>
+</kw>
+<kw name="Clicar no botão Acessar" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=/html/body/app-root/div/app-login/div/div/div/div[2]/form/div[3]/button</arg>
+</arguments>
+<msg timestamp="20200616 13:10:46.507" level="INFO">Clicking element 'xpath=/html/body/app-root/div/app-login/div/div/div/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20200616 13:10:46.507" endtime="20200616 13:10:46.711"></status>
+</kw>
+<status status="PASS" starttime="20200616 13:10:46.506" endtime="20200616 13:10:46.712"></status>
+</kw>
+<kw name="Clicar na opção Vendas" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="amenu"]</arg>
+</arguments>
+<status status="PASS" starttime="20200616 13:10:46.722" endtime="20200616 13:10:49.006"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="amenu"]</arg>
+</arguments>
+<msg timestamp="20200616 13:10:49.012" level="INFO">Clicking element 'xpath=//*[@id="amenu"]'.</msg>
+<status status="PASS" starttime="20200616 13:10:49.006" endtime="20200616 13:10:49.250"></status>
+</kw>
+<status status="PASS" starttime="20200616 13:10:46.712" endtime="20200616 13:10:49.250"></status>
+</kw>
+<kw name="Clicar na opção Clientes" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="clientes"]</arg>
+</arguments>
+<status status="PASS" starttime="20200616 13:10:49.252" endtime="20200616 13:10:49.327"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="clientes"]</arg>
+</arguments>
+<msg timestamp="20200616 13:10:49.329" level="INFO">Clicking element 'xpath=//*[@id="clientes"]'.</msg>
+<status status="PASS" starttime="20200616 13:10:49.327" endtime="20200616 13:10:49.604"></status>
+</kw>
+<status status="PASS" starttime="20200616 13:10:49.251" endtime="20200616 13:10:49.605"></status>
+</kw>
+<kw name="Clicar no botão Cadastrar novo cliente" library="resource">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="cadastrocliente"]</arg>
+</arguments>
+<status status="PASS" starttime="20200616 13:10:49.606" endtime="20200616 13:10:50.083"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="cadastrocliente"]</arg>
+</arguments>
+<msg timestamp="20200616 13:10:50.084" level="INFO">Clicking button 'xpath=//*[@id="cadastrocliente"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200616 13:10:50.570" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200616 13:10:50.269" endtime="20200616 13:10:50.570"></status>
+</kw>
+<msg timestamp="20200616 13:10:50.573" level="FAIL">WebDriverException: Message: unknown error: Element &lt;button _ngcontent-deb-c13="" class="btn btn-warning btn-block mt-xl" id="cadastrocliente" type="button"&gt;...&lt;/button&gt; is not clickable at point (920, 394). Other element would receive the click: &lt;div _ngcontent-deb-c0="" class="bg-loading ng-star-inserted"&gt;...&lt;/div&gt;
+  (Session info: chrome=83.0.4103.97)
+  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 5.3.0-53-generic x86_64)
+</msg>
+<status status="FAIL" starttime="20200616 13:10:50.083" endtime="20200616 13:10:50.574"></status>
+</kw>
+<status status="FAIL" starttime="20200616 13:10:49.605" endtime="20200616 13:10:50.574"></status>
+</kw>
+<kw name="Encerrar Browser" library="resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200616 13:10:50.587" endtime="20200616 13:10:50.807"></status>
+</kw>
+<status status="PASS" starttime="20200616 13:10:50.583" endtime="20200616 13:10:50.807"></status>
+</kw>
+<tags>
+<tag>caso03</tag>
+</tags>
+<status status="FAIL" starttime="20200616 13:09:03.700" endtime="20200616 13:10:50.807" critical="yes">WebDriverException: Message: unknown error: Element &lt;button _ngcontent-deb-c13="" class="btn btn-warning btn-block mt-xl" id="cadastrocliente" type="button"&gt;...&lt;/button&gt; is not clickable at point (920, 394). Other element would receive the click: &lt;div _ngcontent-deb-c0="" class="bg-loading ng-star-inserted"&gt;...&lt;/div&gt;
+  (Session info: chrome=83.0.4103.97)
+  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 5.3.0-53-generic x86_64)
+</status>
+</test>
+<status status="FAIL" starttime="20200616 13:09:03.426" endtime="20200616 13:10:50.809"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">caso03</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="testAdquirencia">testAdquirencia</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
